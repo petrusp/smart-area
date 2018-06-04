@@ -122,6 +122,9 @@ angular.module('smartArea', [])
             textArea.on('keyup', function(){
                 scope.fakeAreaElement.height(textArea.height());
             });
+            textArea.on('focus', function(){
+                scope.fakeAreaElement.height(textArea.height());
+            });
 
             return mainWrap;
         },
