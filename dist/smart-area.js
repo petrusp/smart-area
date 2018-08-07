@@ -124,6 +124,7 @@ angular.module('smartArea', [])
             });
             textArea.on('focus', function(){
                 scope.fakeAreaElement.height(textArea.height());
+                scope.fakeAreaElement.css('width',(parseInt(textArea.outerWidth()) + 1) + 'px');
             });
 
             return mainWrap;
