@@ -102,8 +102,6 @@ angular.module('smartArea', [])
                 scope.fakeAreaElement.css(prop, textArea.css(prop));
             });
 
-            scope.fakeAreaElement.css('width',(parseInt(textArea.outerWidth()) + 1) + 'px');
-
             // Special considerations for Firefox
 //            if (isFirefox) {
 //                scope.fakeAreaElement.css('width',parseInt(textArea.width()) - 2 + 'px');  // Firefox adds 2 pixels to the padding - https://bugzilla.mozilla.org/show_bug.cgi?id=753662
